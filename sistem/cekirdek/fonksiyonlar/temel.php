@@ -30,6 +30,12 @@ function m_jsonAl($json = "", $al = "", $yaz = null) {
     return $yaz;
 }
 
+function m_bak($param){
+    echo "<pre>";
+    print_r(!empty($param)?$param:$GLOBALS);
+    exit;
+}
+
 function m_jsonDegistir($json = "", $bul = "", $yaz = null, $r_obj = 0) {
     $is_json = true;
     if (!is_object($json)) {
